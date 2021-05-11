@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+#pageHead {
+    margin-left: 10px;
+}
