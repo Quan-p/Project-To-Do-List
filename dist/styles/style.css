@@ -1,6 +1,8 @@
 header {
     display: flex;
     align-items: center;
+    border-bottom: 3px black solid;
+    margin-bottom: 20px;
 }
 
 #pageHead {
