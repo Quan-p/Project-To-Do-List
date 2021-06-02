@@ -1,3 +1,13 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -9,11 +19,14 @@ header {
     margin-left: 10px;
 }
 
+
+
 #sidebar {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    margin: left;
+    width: 130px;
+    height: 90vh;
+    border-right: 3px black solid;
 }
 
 span.material-icons {
