@@ -19,14 +19,20 @@ header {
     margin-left: 10px;
 }
 
+#nav {
+    height: 90vh;
+    border-right: 3px black solid;
+    width: 130px;
+} 
 
-
-#sidebar {
+.sidebar {
     display: flex;
     flex-direction: column;
     width: 130px;
-    height: 90vh;
-    border-right: 3px black solid;
+} 
+
+#projects {
+    border-top: 3px black solid;
 }
 
 span.material-icons {
