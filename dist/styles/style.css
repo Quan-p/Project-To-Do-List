@@ -22,13 +22,13 @@ header {
 #nav {
     height: 90vh;
     border-right: 3px black solid;
-    width: 130px;
+    width: 150px;
 } 
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: 130px;
+    width: 150px;
 } 
 
 #projects {
@@ -43,10 +43,13 @@ span.material-icons {
 button {
     display: inline-flex;
     align-items: center;
-    text-align: left;
-    
+    text-align: left;  
     margin-bottom: 20px;
-    
+    margin-left: 10px;
     border: none;
     width: 120px;
+}
+
+#projectButton {
+    margin-top: 20px;
 }
