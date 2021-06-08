@@ -3,6 +3,10 @@ html, body {
     width: 100%;
 }
 
+#content {
+    display: flex;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -32,6 +36,7 @@ h2 {
 .sidebar {
     display: flex;
     flex-direction: column;
+    
     width: 150px;
 } 
 
@@ -52,4 +57,13 @@ button {
     margin-left: 10px;
     border: none;
     width: 120px;
+}
+
+#mainDisplay {
+    display: flex;
+    margin-left: 20px;
+}
+
+h3 {
+    margin-top: 0px;
 }
