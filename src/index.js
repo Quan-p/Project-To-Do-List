@@ -1,4 +1,4 @@
-//mainDisplay = document.getElementById('mainDisplay');
+import createGrid from './modules/inbox.js';
 
 function clickInbox() {
     mainDisplay = document.getElementById('mainDisplay')
@@ -25,6 +25,7 @@ todayBtn.addEventListener('click', clickToday);
 var weekBtn = document.getElementById('weekBtn');
 weekBtn.addEventListener('click', clickWeek);
 
+createGrid();
 }
 
 controlBtn();
