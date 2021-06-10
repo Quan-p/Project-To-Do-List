@@ -18,6 +18,13 @@ function clickWeek() {
 function controlBtn() {
 var inboxBtn = document.getElementById('inboxBtn');
 inboxBtn.addEventListener('click', clickInbox);
+
+var todayBtn = document.getElementById('todayBtn');
+todayBtn.addEventListener('click', clickToday);
+
+var weekBtn = document.getElementById('weekBtn');
+weekBtn.addEventListener('click', clickWeek);
+
 }
 
 controlBtn();
