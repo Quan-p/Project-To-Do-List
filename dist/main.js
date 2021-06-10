@@ -1,1 +1,1 @@
-document.getElementById("inboxBtn").addEventListener("click",(function(){mainDisplay=document.getElementById("mainDisplay"),mainDisplay.innerHTML="new title"}));
+document.getElementById("inboxBtn").addEventListener("click",(function(){mainDisplay=document.getElementById("mainDisplay"),mainDisplay.innerHTML="Inbox"}));
