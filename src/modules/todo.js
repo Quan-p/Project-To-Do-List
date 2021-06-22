@@ -1,4 +1,4 @@
-function createModal() {
+function modalBody() {
     var body = document.body;
     var modalStore = document.createElement('div');
     modalStore.setAttribute('id', 'modalStore');
@@ -19,6 +19,9 @@ function modalContent() {
     
 }
 
-
+function createModal() {
+    modalBody();
+    modalContent();
+}
 
 export default createModal;
