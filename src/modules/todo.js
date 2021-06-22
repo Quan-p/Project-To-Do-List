@@ -4,6 +4,7 @@ function modalBody() {
     modalStore.setAttribute('id', 'modalStore');
     modalStore.textContent = 'test';
     body.appendChild(modalStore);
+    return modalStore;
 }
 
 function modalContent() {
@@ -16,7 +17,13 @@ function modalContent() {
 
     mainModal.appendChild(closeSpan);
     modalStore.appendChild(mainModal);
-    
+    return mainModal;
+}
+
+function createForm() {
+    var form = doucment.createElement('form');
+    form.setAttribute('id', 'modal-form');
+
 }
 
 function createModal() {
