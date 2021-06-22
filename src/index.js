@@ -1,4 +1,5 @@
 import createGrid from './modules/inbox.js';
+import createModal from './modules/todo.js';
 
 function clickInbox() {
     mainDisplay = document.getElementById('mainDisplay')
@@ -27,5 +28,12 @@ weekBtn.addEventListener('click', clickWeek);
 
 createGrid();
 }
+
+function addItem() {
+    var addProject = document.getElementById('addProject');
+    addProject.addEventListener('click', createModal);
+}
+
+addItem();
 
 controlBtn();
