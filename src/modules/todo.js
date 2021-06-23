@@ -22,11 +22,13 @@ function modalContent() {
     columnTwo.setAttribute('class', 'columns');
     columnTwo.setAttribute('id', 'col-two');
 
+    var modalSpace = modalBody();
+
     mainModal.appendChild(columnOne);
     mainModal.appendChild(columnTwo);
 
     mainModal.appendChild(closeSpan);
-    modalStore.appendChild(mainModal);
+    modalSpace.appendChild(mainModal);
     return mainModal;
 }
 
@@ -37,7 +39,6 @@ function createForm() {
 }
 
 function createModal() {
-    modalBody();
     modalContent();
 }
 
