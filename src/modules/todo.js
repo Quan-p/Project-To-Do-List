@@ -2,7 +2,10 @@ function modalBody() {
     var body = document.body;
     var modalStore = document.createElement('div');
     modalStore.setAttribute('id', 'modalStore');
-    modalStore.textContent = 'test';
+    var modalTitle = document.createElement('p');
+    modalTitle.setAttribute('class', 'textContent')
+    modalTitle.innerHTML = 'test';
+    modalStore.appendChild(modalTitle);
     body.appendChild(modalStore);
     return modalStore;
 }
