@@ -32,6 +32,7 @@ createGrid();
 function addItem() {
     var addProject = document.getElementById('addProject');
     addProject.addEventListener('click', createModal);
+
 }
 
 addItem();
