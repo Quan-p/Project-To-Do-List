@@ -45,8 +45,15 @@ function createForm() {
     mainModal.appendChild(form);
 }
 
+function closeModal() {
+    modalStore.style.display = 'none';
+}
+
 function openModal() {
     modalStore.style.display = 'block';
+
+    var span = document.getElementsByClassName('close-button')[0];
+    span.addEventListener('click', closeModal);
 }
 
 function createModal() {
