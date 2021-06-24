@@ -84,7 +84,6 @@ h3 {
 }
 
 .modal-content {
-    display: flex;
     background-color: azure;
     margin: auto;
     padding: 20px;
@@ -92,12 +91,19 @@ h3 {
     width: 60%;
 }
 
-.column {
-    flex: 50%;
+.close-button {
+    color: black;
+    font-size: 25px;
+    float: right;
+    font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+/* .column {
+    flex: 50%;
+} */
+
+/* @media screen and (max-width: 600px) {
     .column {
       width: 100%;
     }
-}
+} */
