@@ -26,14 +26,15 @@ function modalContent() {
     var modalTitle = document.createElement('p');
     modalTitle.setAttribute('class', 'textContent')
     modalTitle.innerHTML = 'test';
-    mainModal.appendChild(modalTitle);
+    
 
     var modalSpace = modalBody();
-
+    
+    mainModal.appendChild(closeSpan);
     mainModal.appendChild(columnOne);
     mainModal.appendChild(columnTwo);
 
-    mainModal.appendChild(closeSpan);
+    mainModal.appendChild(modalTitle);
     modalSpace.appendChild(mainModal);
     return mainModal;
 }
