@@ -58,7 +58,9 @@ function openModal() {
 
 function createModal() {
     modalContent();
-    openModal();
 }
 
-export default createModal;
+export {
+    modalContent,
+    openModal
+}
