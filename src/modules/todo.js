@@ -2,10 +2,8 @@ function modalBody() {
     var body = document.body;
     var modalStore = document.createElement('div');
     modalStore.setAttribute('id', 'modalStore');
-    var modalTitle = document.createElement('p');
-    modalTitle.setAttribute('class', 'textContent')
-    modalTitle.innerHTML = 'test';
-    modalStore.appendChild(modalTitle);
+    modalStore.setAttribute('class', 'modal');
+
     body.appendChild(modalStore);
     return modalStore;
 }
@@ -24,6 +22,11 @@ function modalContent() {
     var columnTwo = document.createElement('div');
     columnTwo.setAttribute('class', 'columns');
     columnTwo.setAttribute('id', 'col-two');
+
+    var modalTitle = document.createElement('p');
+    modalTitle.setAttribute('class', 'textContent')
+    modalTitle.innerHTML = 'test';
+    mainModal.appendChild(modalTitle);
 
     var modalSpace = modalBody();
 
