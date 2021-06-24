@@ -44,8 +44,13 @@ function createForm() {
     mainModal.appendChild(form);
 }
 
+function openModal() {
+    modalStore.style.display = 'block';
+}
+
 function createModal() {
     modalContent();
+    openModal();
 }
 
 export default createModal;
