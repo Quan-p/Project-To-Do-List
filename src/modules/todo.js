@@ -13,8 +13,8 @@ function modalContent() {
     mainModal.setAttribute('class', 'modal-content');
     
     var closeSpan = document.createElement('span');
-    closeSpan.setAttribute('class', 'sr-only');
-    closeSpan.textContent = 'Close';
+    closeSpan.setAttribute('class', 'close-button');
+    closeSpan.innerHTML = '&times;';
 
     var columnOne = document.createElement('div');
     columnOne.setAttribute('class', 'columns');
