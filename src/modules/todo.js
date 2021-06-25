@@ -11,6 +11,9 @@ function modalBody() {
 function modalContent() {
     var mainModal = document.createElement('div');
     mainModal.setAttribute('class', 'modal-content');
+
+    var header = document.createElement('div');
+    header.setAttribute('class', 'modal-header');
     
     var closeSpan = document.createElement('span');
     closeSpan.setAttribute('class', 'close-button');
@@ -27,14 +30,18 @@ function modalContent() {
     modalTitle.setAttribute('class', 'textContent')
     modalTitle.innerHTML = 'test';
     
+    var footer = document.createElement('div');
+    footer.setAttribute('class', 'modal-footer');
 
     var modalSpace = modalBody();
-    
-    mainModal.appendChild(closeSpan);
+
+    mainModal.appendChild(header);
+    header.appendChild(closeSpan);
     mainModal.appendChild(columnOne);
     mainModal.appendChild(columnTwo);
-
     mainModal.appendChild(modalTitle);
+    mainModal.appendChild(footer);
+
     modalSpace.appendChild(mainModal);
     return mainModal;
 }
