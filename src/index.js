@@ -1,6 +1,5 @@
 import createGrid from './modules/inbox.js';
 import { modalContent, openModal } from './modules/todo.js';
-//import openModal from './modules/todo.js';
 
 function clickInbox() {
     mainDisplay = document.getElementById('mainDisplay')
