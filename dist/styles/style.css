@@ -98,6 +98,11 @@ h3 {
     font-weight: bold;
 }
 
+.close-button:hover,
+.close-button:focus {
+    cursor: pointer;
+}
+
 /* .column {
     flex: 50%;
 } */
