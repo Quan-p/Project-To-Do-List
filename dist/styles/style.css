@@ -91,6 +91,12 @@ h3 {
     width: 60%;
 }
 
+.modal-header {
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    padding-right: 0;
+}
+
 .close-button {
     color: black;
     font-size: 25px;
@@ -101,14 +107,20 @@ h3 {
 .close-button:hover,
 .close-button:focus {
     cursor: pointer;
+    color: #000;
+    text-decoration: none;
 }
 
-/* .column {
-    flex: 50%;
-} */
+.modal-body {
+    display: flex;
+}
 
-/* @media screen and (max-width: 600px) {
+.column {
+    flex: 50%;
+}
+
+@media screen and (max-width: 600px) {
     .column {
       width: 100%;
     }
-} */
+}
