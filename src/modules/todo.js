@@ -14,6 +14,7 @@ function modalContent() {
 
     var header = document.createElement('div');
     header.setAttribute('class', 'modal-header');
+    header.innerHTML = 'Add Task';
     
     var closeSpan = document.createElement('span');
     closeSpan.setAttribute('class', 'close-button');
