@@ -28,11 +28,22 @@ function columnContent() {
     textTwo.innerHTML = 'some text';
 
     columnOne.appendChild(textOne);
-    columnTwo.appendChild(textTwo)
+    columnTwo.appendChild(textTwo);
+
+    var formOne = document.createElement('form');
+    formOne.setAttribute('class', 'modal-form');
+    var formTwo = document.createElement('form');
+    formTwo.setAttribute('class', 'modal-form');
+    columnOne.appendChild(formOne);
+    columnTwo.appendChild(formTwo);
 
     modalBody.appendChild(columnOne);
     modalBody.appendChild(columnTwo);
 
+    
+
+
+   
     return modalBody;
 }
 
@@ -48,9 +59,9 @@ function modalContent() {
     closeSpan.setAttribute('class', 'close-button');
     closeSpan.innerHTML = '&times;';
 
-    // var modalTitle = document.createElement('p');
-    // modalTitle.setAttribute('class', 'textContent')
-    // modalTitle.innerHTML = 'test';
+    var modalTitle = document.createElement('p');
+    modalTitle.setAttribute('class', 'textContent')
+    modalTitle.innerHTML = 'test';
     
     var footer = document.createElement('div');
     footer.setAttribute('class', 'modal-footer');
@@ -66,13 +77,10 @@ function modalContent() {
     mainModal.appendChild(footer);
 
     modalSpace.appendChild(mainModal);
-    return mainModal;
-}
 
-function createForm() {
-    var form = doucment.createElement('form');
-    form.setAttribute('id', 'modal-form');
-    mainModal.appendChild(form);
+    //createForm();
+
+    return mainModal;
 }
 
 function closeModal() {
@@ -90,10 +98,6 @@ function openModal() {
           modalStore.style.display = "none";
         }
       }
-}
-
-function createModal() {
-    modalContent();
 }
 
 export {
