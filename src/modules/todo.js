@@ -48,16 +48,26 @@ function columnContent() {
     
     formOne.appendChild(titleInput);
     formOne.appendChild(document.createElement("br"));
+
+    var desc = document.createElement('label');
+    desc.setAttribute('for', 'description');
+    desc.innerHTML = 'Description:';
+    formOne.appendChild(desc);
+    formOne.appendChild(document.createElement('br'));
+
+    var descInput = document.createElement('input');
+    descInput.setAttribute('type', 'text');
+    descInput.setAttribute('id', 'desc');
+    descInput.setAttribute('name', 'desc');
+    
+    formOne.appendChild(descInput);
+    formOne.appendChild(document.createElement("br"));
     
     columnOne.appendChild(formOne);
     columnTwo.appendChild(formTwo);
 
     modalBody.appendChild(columnOne);
     modalBody.appendChild(columnTwo);
-
-    
-
-
    
     return modalBody;
 }
