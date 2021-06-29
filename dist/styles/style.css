@@ -144,3 +144,12 @@ h3 {
       width: 100%;
     }
 }
+
+#title {
+    width: 100%;
+}
+
+#desc {
+    width: 100%;
+    height: auto;
+}
