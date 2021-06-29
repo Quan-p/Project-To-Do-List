@@ -55,8 +55,7 @@ function columnContent() {
     formOne.appendChild(desc);
     formOne.appendChild(document.createElement('br'));
 
-    var descInput = document.createElement('input');
-    descInput.setAttribute('type', 'text');
+    var descInput = document.createElement('TEXTAREA');
     descInput.setAttribute('id', 'desc');
     descInput.setAttribute('name', 'desc');
     
