@@ -34,6 +34,21 @@ function columnContent() {
     formOne.setAttribute('class', 'modal-form');
     var formTwo = document.createElement('form');
     formTwo.setAttribute('class', 'modal-form');
+
+    var title = document.createElement('label');
+    title.setAttribute('for', 'title');
+    title.innerHTML = 'Title:';
+    formOne.appendChild(title);
+    formOne.appendChild(document.createElement('br'));
+
+    var titleInput = document.createElement('input');
+    titleInput.setAttribute('type', 'text');
+    titleInput.setAttribute('id', 'title');
+    titleInput.setAttribute('name', 'title');
+    
+    formOne.appendChild(titleInput);
+    formOne.appendChild(document.createElement("br"));
+    
     columnOne.appendChild(formOne);
     columnTwo.appendChild(formTwo);
 
