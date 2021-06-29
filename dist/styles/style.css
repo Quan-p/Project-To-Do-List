@@ -115,8 +115,28 @@ h3 {
     display: flex;
 }
 
-.column {
+/* .modal-body:after {
+    content: '';
+    display: table;
+    clear: both;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
     flex: 50%;
+    padding: 20px;
+}
+
+#col-one {
+    background-color: cadetblue;
+}
+
+#col-two {
+    background-color: cornsilk;
 }
 
 @media screen and (max-width: 600px) {
