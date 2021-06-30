@@ -61,6 +61,20 @@ function columnContent() {
     
     formOne.appendChild(descInput);
     formOne.appendChild(document.createElement("br"));
+
+    var date = document.createElement('label');
+    date.setAttribute('for', 'dueDate');
+    date.innerHTML = 'Due Date:';
+    formTwo.appendChild(date);
+    //formTwo.appendChild(document.createElement('br'));
+
+    var dueDate = document.createElement('input');
+    dueDate.setAttribute('type', 'datetime-local');
+    dueDate.setAttribute('id', 'date');
+    dueDate.setAttribute('name', 'date');
+    
+    formTwo.appendChild(dueDate);
+    formTwo.appendChild(document.createElement("br"));
     
     columnOne.appendChild(formOne);
     columnTwo.appendChild(formTwo);
