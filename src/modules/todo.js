@@ -66,7 +66,7 @@ function columnContent() {
     date.setAttribute('for', 'dueDate');
     date.innerHTML = 'Due Date:';
     formTwo.appendChild(date);
-    //formTwo.appendChild(document.createElement('br'));
+    formTwo.appendChild(document.createElement('br'));
 
     var dueDate = document.createElement('input');
     dueDate.setAttribute('type', 'datetime-local');
