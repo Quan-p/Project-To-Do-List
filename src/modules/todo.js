@@ -19,17 +19,6 @@ function columnContent() {
     columnTwo.setAttribute('class', 'columns');
     columnTwo.setAttribute('id', 'col-two');
 
-    var textOne = document.createElement('p');
-    textOne.setAttribute('class', 'column-text')
-    textOne.innerHTML = 'some text';
-
-    var textTwo = document.createElement('p');
-    textTwo.setAttribute('class', 'column-text')
-    textTwo.innerHTML = 'some text';
-
-    columnOne.appendChild(textOne);
-    columnTwo.appendChild(textTwo);
-
     var formOne = document.createElement('form');
     formOne.setAttribute('class', 'modal-form');
     var formTwo = document.createElement('form');
