@@ -83,18 +83,17 @@ h3 {
     background-color: rgba(0,0,0,0.4);
 }
 
-.modal-content {
+.modal-body {
     background-color: azure;
     margin: auto;
     padding: 20px;
-    border: 1px solid black;
     width: 60%;
 }
 
 .modal-header {
     font-size: 25px;
-    border-bottom: 2px solid black;
     padding-right: 0;
+    padding-top: 0px;
 }
 
 .close-button {
@@ -111,7 +110,7 @@ h3 {
     text-decoration: none;
 }
 
-.modal-body {
+.modal-content {
     display: flex;
 }
 
