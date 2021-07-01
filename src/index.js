@@ -1,5 +1,5 @@
 import createGrid from './modules/inbox.js';
-import { modalContent, openModal } from './modules/todo.js';
+import { openModal } from './modules/todo.js';
 
 function clickInbox() {
     mainDisplay = document.getElementById('mainDisplay')
@@ -34,9 +34,9 @@ function addItem() {
     addProject.addEventListener('click', openModal);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    modalContent();
-});
+//document.addEventListener('DOMContentLoaded', function() {
+    //modalContent();
+//});
 
 //modalContent();
 addItem();
