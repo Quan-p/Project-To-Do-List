@@ -122,12 +122,14 @@
 //     return mainModal;
 // }
 
-// function closeModal() {
-//     modalStore.style.display = 'none';
-// }
+function closeModal() {
+    modalStore.style.display = 'none';
+}
 
-// function openModal() {
-//     modalStore.style.display = 'block';
+function openModal() {
+    var modal = document.getElementById('modalStore')
+    modal.style.display = 'block';
+}
 
 //     var span = document.getElementsByClassName('close-button')[0];
 //     span.addEventListener('click', closeModal);
@@ -139,7 +141,7 @@
 //       }
 // }
 
-// export {
-//     modalContent,
-//     openModal
-// }
+export {
+    //modalContent,
+    openModal
+}
