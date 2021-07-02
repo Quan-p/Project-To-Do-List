@@ -88,6 +88,11 @@ h3 {
     margin: auto;
     padding: 20px;
     width: 60%;
+    overflow: auto;
+}
+
+h4 {
+    margin-top: 0px;
 }
 
 .modal-header {
