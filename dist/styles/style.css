@@ -124,8 +124,14 @@ h4 {
 
 .columns {
     float: left;
-    flex: 50%;
+    width: 50%;
     padding: 20px;
+}
+
+.modal-content:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 #col-one {
@@ -137,8 +143,12 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
-    .column {
+    .columns {
       width: 100%;
+    }
+
+    .modal-content {
+        flex-direction: column;
     }
 }
 
@@ -149,4 +159,8 @@ h4 {
 #desc {
     width: 100%;
     height: auto;
+}
+
+.modal-footer {
+    float: right;
 }
