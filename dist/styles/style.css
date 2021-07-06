@@ -85,10 +85,14 @@ h3 {
 
 .modal-body {
     background-color: azure;
+    position: absolute;
     margin: auto;
     padding: 20px;
     width: 80%;
     overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h4 {
