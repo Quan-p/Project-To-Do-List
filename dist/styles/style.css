@@ -87,7 +87,7 @@ h3 {
     background-color: azure;
     position: absolute;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     width: 80%;
     overflow: auto;
     left: 50%;
@@ -96,13 +96,15 @@ h3 {
 }
 
 h4 {
-    margin-top: 0px;
+    margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .modal-header {
     font-size: 25px;
     padding-right: 0;
+    border-bottom: 1px solid gray;
 }
 
 .close-button {
@@ -110,6 +112,7 @@ h4 {
     font-size: 25px;
     float: right;
     font-weight: bold;
+    margin-right: 15px;
 }
 
 .close-button:hover,
@@ -139,13 +142,13 @@ h4 {
     clear: both;
 }
 
-#col-one {
+/* #col-one {
     background-color: cadetblue;
 }
 
 #col-two {
     background-color: cornsilk;
-}
+} */
 
 @media screen and (max-width: 600px) {
     .columns {
