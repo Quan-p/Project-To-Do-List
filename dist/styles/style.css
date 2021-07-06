@@ -161,6 +161,14 @@ h4 {
     height: auto;
 }
 
+input {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
 .modal-footer {
     float: right;
 }
