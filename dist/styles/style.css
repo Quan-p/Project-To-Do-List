@@ -169,14 +169,20 @@ h4 {
     height: auto;
 }
 
-input {
-    width: 100%;
-}
 
 select {
     width: 100%;
 }
 
 .modal-footer {
+    text-align: center;
     float: right;
+}
+
+#modal-submit {
+    margin-right: 20px;
+    height: 40px;
+    width: 120px;
+    justify-content: center;
+    border-radius: 8px;
 }
