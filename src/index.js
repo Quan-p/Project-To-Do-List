@@ -34,11 +34,6 @@ function addItem() {
     addProject.addEventListener('click', openModal);
 }
 
-//document.addEventListener('DOMContentLoaded', function() {
-    //modalContent();
-//});
-
-//modalContent();
 addItem();
 controlBtn();
 
