@@ -19,6 +19,10 @@ header {
     margin-bottom: 20px;
 }
 
+#check-icon {
+    margin-left: 20px;
+}
+
 #open-modal {
     margin-left: auto;
     margin-right: 20px;
