@@ -1,7 +1,7 @@
 function btnControl() {
-    clickInbox();
-    clickToday();
-    clickWeek();
+    document.getElementById("inboxBtn").onclick = function() {clickInbox()};
+    document.getElementById("todayBtn").onclick = function() {clickToday()};
+    document.getElementById("weekBtn").onclick = function() {clickWeek()};
 }
 function clickInbox() {
     var mainDisplay = document.getElementById('mainDisplay')
