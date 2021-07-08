@@ -4,18 +4,23 @@ function btnControl() {
     document.getElementById("weekBtn").onclick = function() {clickWeek()};
 }
 function clickInbox() {
-    var mainDisplay = document.getElementById('mainDisplay')
-    mainDisplay.innerHTML = 'Inbox';
+    var pageTitle = document.getElementById('mainHead')
+    pageTitle.innerHTML = 'Inbox';
 }
     
 function clickToday() {
-    var mainDisplay = document.getElementById('mainDisplay')
-    mainDisplay.innerHTML = 'Today';
+    var pageTitle = document.getElementById('mainHead')
+    pageTitle.innerHTML = 'Today';
 }
     
 function clickWeek() {
-    var mainDisplay = document.getElementById('mainDisplay')
-    mainDisplay.innerHTML = 'Week';
+    var pageTitle = document.getElementById('mainHead')
+    pageTitle.innerHTML = 'Week';
+}
+
+function clickProject() {
+    var list = document.getElementById('project-list')
+    list.appendChild
 }
 
 export default btnControl
