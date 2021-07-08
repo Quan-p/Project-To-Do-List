@@ -199,3 +199,15 @@ select {
     justify-content: center;
     border-radius: 8px;
 }
+
+#project-modal {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
