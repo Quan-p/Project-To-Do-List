@@ -19,6 +19,18 @@ header {
     margin-bottom: 20px;
 }
 
+#open-modal {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#open-modal:hover,
+#open-modal:focus {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
 h2 {
     margin-left: 12px;
 }
@@ -141,14 +153,6 @@ h4 {
     display: table;
     clear: both;
 }
-
-/* #col-one {
-    background-color: cadetblue;
-}
-
-#col-two {
-    background-color: cornsilk;
-} */
 
 @media screen and (max-width: 600px) {
     .columns {
