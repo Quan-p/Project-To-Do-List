@@ -5,7 +5,7 @@ import btnControl from './modules/controller.js';
 createGrid();
 
 function addItem() {
-    var addProject = document.getElementById('addProject');
+    var addProject = document.getElementById('open-modal');
     addProject.addEventListener('click', openModal);
 }
 
