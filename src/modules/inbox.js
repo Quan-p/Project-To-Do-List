@@ -5,8 +5,6 @@ function createGrid() {
     var mainContent = document.getElementById('mainDisplay');
     mainContent.appendChild(mainGrid);
 
-    mainGrid.textContent = 'test text'
-
     return mainGrid;
 }
 
