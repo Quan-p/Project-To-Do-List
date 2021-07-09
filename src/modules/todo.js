@@ -1,5 +1,6 @@
 function closeModal() {
     modalStore.style.display = 'none';
+    projectStore.style.display = 'none';
 }
 
 function openModal() {
@@ -20,12 +21,12 @@ function openProject() {
     var modal = document.getElementById('projectStore')
     modal.style.display = 'block';
 
-    var span = document.getElementsByClassName('close-button')[0];
+    var span = document.getElementsByClassName('close-button')[1];
     span.addEventListener('click', closeModal);
 
     window.onclick = function(event) {
-        if (event.target == modalStore) {
-          modalStore.style.display = "none";
+        if (event.target == projectStore) {
+          projectStore.style.display = "none";
         }
       }
 }
