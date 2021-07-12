@@ -1,11 +1,6 @@
-function createGrid() {
-    var mainGrid = document.createElement('div');
-    mainGrid.setAttribute('id', 'mainGrid');
-
-    var mainContent = document.getElementById('mainDisplay');
-    mainContent.appendChild(mainGrid);
-
-    return mainGrid;
+function showContent() {
+    var main = document.getElementById('inbox');
+    main.style.display = 'block';
 }
 
 
@@ -13,4 +8,4 @@ function inboxGrid() {
     
 }
 
-export default createGrid;
+export default showContent
