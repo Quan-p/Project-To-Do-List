@@ -1,4 +1,5 @@
 import addProject from './project.js';
+import showContent from './inbox.js';
 
 function btnControl() {
     document.getElementById("inboxBtn").onclick = function() {clickInbox()};
@@ -9,6 +10,7 @@ function btnControl() {
 function clickInbox() {
     var pageTitle = document.getElementById('mainHead')
     pageTitle.innerHTML = 'Inbox';
+    showContent();
 }
     
 function clickToday() {
