@@ -91,6 +91,11 @@ h3 {
     font-size: 25px;
 }
 
+.sideNav {
+    display: none;
+}
+
+/* Modal styling */
 .modal {
     display: none;
     position: fixed;
