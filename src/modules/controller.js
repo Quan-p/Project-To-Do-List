@@ -23,7 +23,7 @@ function clickWeek() {
 
 function clickProject() {
     document.getElementById('project-submit').addEventListener('click', addProject());
-    
+    projectStore.style.display = "none";
 }
 
 export default btnControl
