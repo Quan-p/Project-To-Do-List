@@ -84,6 +84,7 @@ button {
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
+    flex-direction: column;
 }
 
 h3 {
@@ -97,6 +98,7 @@ h3 {
 
 .taskContainer {
     list-style-type: none;
+    display: grid;
 }
 
 /* Modal styling */
