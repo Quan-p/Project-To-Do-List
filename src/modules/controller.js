@@ -16,11 +16,13 @@ function clickInbox() {
 function clickToday() {
     var pageTitle = document.getElementById('mainHead')
     pageTitle.innerHTML = 'Today';
+    document.getElementById('inbox').style.display = 'none';
 }
     
 function clickWeek() {
     var pageTitle = document.getElementById('mainHead')
     pageTitle.innerHTML = 'Week';
+    document.getElementById('inbox').style.display = 'none';
 }
 
 function clickProject() {
