@@ -95,6 +95,10 @@ h3 {
     display: none;
 }
 
+.taskContainer {
+    list-style-type: none;
+}
+
 /* Modal styling */
 .modal {
     display: none;
