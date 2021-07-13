@@ -1,4 +1,3 @@
-import createGrid from './modules/inbox.js';
 import { openModal, openProject } from './modules/todo.js';
 import btnControl from './modules/controller.js';
 
@@ -7,12 +6,12 @@ function addItem() {
     addTodo.addEventListener('click', openModal);
 }
 
-function addProject() {
+function modalProject() {
     var addProject = document.getElementById('addProject');
     addProject.addEventListener('click', openProject);
 }
 
 btnControl();
 addItem();
-addProject();
+modalProject();
 
