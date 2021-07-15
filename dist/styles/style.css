@@ -105,6 +105,7 @@ h3 {
 
 .taskControl {
     float: right;
+    display: flex;
 }
 
 #addListItem {
