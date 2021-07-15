@@ -107,6 +107,9 @@ h3 {
     float: right;
 }
 
+#addListItem {
+    cursor: pointer;
+}
 
 /* Modal styling */
 .modal {
