@@ -4,6 +4,7 @@ import btnControl from './modules/controller.js';
 function addItem() {
     var addTodo = document.getElementById('open-modal');
     addTodo.addEventListener('click', openModal);
+    document.getElementById('addListItem').addEventListener('click', openModal);
 }
 
 function modalProject() {
