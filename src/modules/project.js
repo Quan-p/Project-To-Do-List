@@ -6,7 +6,6 @@ function addProject() {
 
     projectItem.innerHTML = project;
     list.appendChild(projectItem);
-
     projectSelect();
 }
 
@@ -16,15 +15,19 @@ function projectSelect() {
     
     var select = document.getElementById('project');  
 
-    for(var i = 0; i < projectArray.length; i++) {
-        var opt = projectArray[i].innerHTML;
-        var el = document.createElement("option");
-        el.textContent = opt;
-        el.value = opt;
-        select.appendChild(el);
-    }
-
-
+    // for(var i = 0; i < projectArray.length; i++) {
+    //     var opt = projectArray[i].innerText;
+    //     var el = document.createElement("option");
+    //     el.textContent = opt;
+    //     el.value = opt;
+    //     select.appendChild(el);
+    //}
+    var last_project = projectArray[projectArray.length - 1].innerText;
+    var el = document.createElement("option");
+    el.textContent = last_project;
+    el.value = last_project;
+    select.appendChild(el);  
+    //select.appendChild(last_project);
 }
 
 export default addProject
