@@ -31,6 +31,14 @@ function openProject() {
       }
 }
 
+function formValue() {
+    var taskTitle = document.getElementById('title').value;
+    var taskDesc = document.getElementById('desc').value;
+    var priority = document.getElementById('priority').value;
+    var dueDate = document.getElementById('due-date').value;
+    var taskProject = document.getElementById('project').value;
+}
+
 function validateForm() {
     var x = document.forms["myForm"]["fname"].value;
     if (x == "") {
@@ -41,5 +49,6 @@ function validateForm() {
 
 export {
     openModal,
-    openProject
+    openProject,
+    formValue
 }
