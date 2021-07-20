@@ -87,7 +87,7 @@
                     </div>
                         <div class='modal-content'>
                             <div id='col-one' class='columns'>
-                                <form id='form-one' class='modal-form'>
+                                <form id='form-one' class='modal-form' onsubmit="return validateForm()" method="post" required>
                                     <label for='title'>Title:</label><br>
                                     <input type='text' id='title' name='title'><br><br>
                                     
@@ -96,7 +96,7 @@
                                 </form>
                             </div>
                             <div id='col-two' class='columns' class='modal-form'>
-                                <form id='form-two'>
+                                <form id='form-two' onsubmit="return validateForm()" method="post" required>
                                     <label for="priority">Priority:</label><br>
                                         <select name="priority" id="priority">
                                         <option value="low">Low</option>
