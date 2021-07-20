@@ -3,8 +3,7 @@ function showContent() {
     main.style.display = 'block';
 }
 
-
-function inboxGrid() {
+function delTask() {
     
 }
 
