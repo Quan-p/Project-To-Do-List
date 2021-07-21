@@ -65,15 +65,21 @@ function writeTask() {
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
     var delItem = document.createElement('span');
-    check.setAttribute('class', 'material-icons taskControl');
-    delItem.value = 'delete';
+    delItem.setAttribute('class', 'material-icons taskControl');
+    delItem.textContent = 'delete';
     var edit = document.createElement('span');
-    check.setAttribute('class', 'material-icons taskControl');
-    edit.value = 'edit';
+    edit.setAttribute('class', 'material-icons taskControl');
+    edit.textContent = 'edit';
     var date = document.createElement('div');
     date.setAttribute('class', 'taskControl');
-    date.value = values.dueDate;
+    date.textContent = values.dueDate;
 
+    taskItem.appendChild(check);
+    taskItem.appendChild(delItem);
+    taskItem.appendChild(edit);
+    taskItem.appendChild(date);
+
+    taskList.appendChild(taskItem);
 }
 
 export {
