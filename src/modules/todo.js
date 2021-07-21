@@ -37,18 +37,20 @@ function formValue() {
     var priority = document.getElementById('priority').value;
     var dueDate = document.getElementById('due-date').value;
     var taskProject = document.getElementById('project').value;
+    console.log(taskDesc);
 }
 
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-}
+// function validateForm() {
+//     var x = document.forms["myForm"]["fname"].value;
+//     if (x == "") {
+//       alert("Name must be filled out");
+//       return false;
+//     }
+// }
 
 export {
     openModal,
     openProject,
     formValue
+    //validateForm
 }
