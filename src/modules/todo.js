@@ -44,8 +44,10 @@ function formValue() {
         dueDate,
         taskProject
     };
-    
 }
+
+let values = formValue();
+
 
 // function validateForm() {
 //     var x = document.forms["myForm"]["fname"].value;
@@ -59,7 +61,7 @@ function writeTask() {
     var taskList = document.getElementById('taskList');
     
     var taskItem = document.createElement('li');
-    taskItem.textContent = taskTitle;
+    taskItem.textContent = values.taskTitle;
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
     var delItem = document.createElement('span');
@@ -70,7 +72,7 @@ function writeTask() {
     edit.value = 'edit';
     var date = document.createElement('div');
     date.setAttribute('class', 'taskControl');
-    date.value = dueDate;
+    date.value = values.dueDate;
 
 }
 
