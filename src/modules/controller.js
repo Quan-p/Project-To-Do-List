@@ -1,11 +1,13 @@
 import addProject from './project.js';
 import showContent from './inbox.js';
+import { formValue } from './todo.js';
 
 function btnControl() {
     document.getElementById("inboxBtn").onclick = function() {clickInbox()};
     document.getElementById("todayBtn").onclick = function() {clickToday()};
     document.getElementById("weekBtn").onclick = function() {clickWeek()};
     document.getElementById("project-submit").onclick = function() {clickProject()};
+    document.getElementById("modal-submit").onclick = function() {addTodo()};
 }
 function clickInbox() {
     var pageTitle = document.getElementById('mainHead')
@@ -28,6 +30,11 @@ function clickWeek() {
 function clickProject() {
     document.getElementById('project-submit').addEventListener('click', addProject());
     projectStore.style.display = "none";
+}
+
+function addTodo() {
+    document.getElementById('modal-submit').addEventListener('click', formValue());
+    modalStore.style.display = 'none';
 }
 
 export default btnControl
