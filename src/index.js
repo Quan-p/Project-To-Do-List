@@ -1,4 +1,4 @@
-import { openModal, openProject } from './modules/todo.js';
+import { openModal, openProject, formValue } from './modules/todo.js';
 import btnControl from './modules/controller.js';
 
 function addItem() {
@@ -12,7 +12,8 @@ function modalProject() {
     addProject.addEventListener('click', openProject);
 }
 
+
+
 btnControl();
 addItem();
 modalProject();
-
