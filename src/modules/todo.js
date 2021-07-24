@@ -37,16 +37,15 @@ function formValue() {
     var priority = document.getElementById('priority').value;
     var dueDate = document.getElementById('due-date').value;
     var taskProject = document.getElementById('project').value;
-    return {
+    return [
         taskTitle,
         taskDesc,
         priority,
         dueDate,
         taskProject
-    };
+    ];
 }
 
-let values = formValue();
 
 
 // function validateForm() {
@@ -58,10 +57,11 @@ let values = formValue();
 // }
 
 function writeTask() {
+    var values = formValue();
     var taskList = document.getElementById('taskList');
     
     var taskItem = document.createElement('li');
-    taskItem.textContent = values.taskTitle;
+    taskItem.textContent = values[0];
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
     var delItem = document.createElement('span');
