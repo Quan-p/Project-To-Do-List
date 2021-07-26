@@ -103,6 +103,10 @@ h3 {
     padding-left: 10px;
 }
 
+.title {
+    display: inline-flex;
+}
+
 .taskControl {
     float: right;
     display: flex;
