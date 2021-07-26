@@ -61,9 +61,12 @@ function writeTask() {
     var taskList = document.getElementById('taskList');
     
     var taskItem = document.createElement('li');
-    taskItem.textContent = values[0];
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
+    //taskItem.textContent = values[0];
+    var titleDiv = document.createElement('div');
+    titleDiv.setAttribute('class', 'title');
+    titleDiv.innerHTML = values[0];
     var delItem = document.createElement('span');
     delItem.setAttribute('class', 'material-icons taskControl');
     delItem.textContent = 'delete';
@@ -75,10 +78,11 @@ function writeTask() {
     date.textContent = values.dueDate;
 
     taskItem.appendChild(check);
+    taskItem.appendChild(titleDiv);
     taskItem.appendChild(delItem);
     taskItem.appendChild(edit);
     taskItem.appendChild(date);
-
+    
     taskList.appendChild(taskItem);
 }
 
