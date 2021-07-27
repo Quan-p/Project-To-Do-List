@@ -97,14 +97,16 @@ h3 {
     display: none;
 }
 
+.taskContainer {
+    width: 100%;
+}
+
 #taskList {
     list-style-type: none;
     display: flex;
     padding-left: 10px;
     flex-direction: column;
 }
-
-
 
 input[type='checkbox'] {
     margin-right: 15px;
@@ -115,8 +117,18 @@ input[type='checkbox'] {
 }
 
 .taskControl {
-    float: right;
     display: flex;
+
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
 }
 
 #addListItem {
@@ -130,12 +142,16 @@ input[type='checkbox'] {
     background-color: #f1f1f1;
 }
 
+.right-task, .left-task {
+    display: flex;
+}
+
 .collapsible {
     cursor: pointer;
     border: none;
     text-align: left;
     outline: none;
-  }
+}
 
 /* Modal styling */
 .modal {
