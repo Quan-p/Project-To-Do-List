@@ -1,4 +1,4 @@
-import { openModal, openProject, formValue } from './modules/todo.js';
+import { openModal, openProject, formValue, collTask } from './modules/todo.js';
 import btnControl from './modules/controller.js';
 
 function addItem() {
@@ -13,7 +13,7 @@ function modalProject() {
 }
 
 
-
+collTask();
 btnControl();
 addItem();
 modalProject();
