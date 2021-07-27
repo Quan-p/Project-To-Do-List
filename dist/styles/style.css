@@ -103,6 +103,10 @@ h3 {
     padding-left: 10px;
 }
 
+input[type='checkbox'] {
+    margin-right: 15px;
+}
+
 .title {
     display: inline-flex;
 }
