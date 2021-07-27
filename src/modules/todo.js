@@ -75,7 +75,7 @@ function writeTask() {
     edit.textContent = 'edit';
     var date = document.createElement('div');
     date.setAttribute('class', 'taskControl');
-    date.textContent = values.dueDate;
+    date.textContent = values[3];
 
     taskItem.appendChild(check);
     taskItem.appendChild(titleDiv);
