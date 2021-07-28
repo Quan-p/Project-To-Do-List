@@ -59,11 +59,15 @@ function formValue() {
 function writeTask() {
     var values = formValue();
     var taskList = document.getElementById('taskList');
-    
     var taskItem = document.createElement('li');
+    
+    var leftTask = document.createElement('div');
+    leftTask.setAttribute('class', 'left-task');
+    var rightTask = document.createElement('div');
+    rightTask.setAttribute('class', 'right-task');
+    
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
-    //taskItem.textContent = values[0];
     var titleDiv = document.createElement('div');
     titleDiv.setAttribute('class', 'title');
     titleDiv.innerHTML = values[0];
@@ -77,12 +81,14 @@ function writeTask() {
     date.setAttribute('class', 'taskControl');
     date.textContent = values[3];
 
-    taskItem.appendChild(check);
-    taskItem.appendChild(titleDiv);
-    taskItem.appendChild(delItem);
-    taskItem.appendChild(edit);
-    taskItem.appendChild(date);
+    leftTask.appendChild(check);
+    leftTask.appendChild(titleDiv);
+    rightTask.appendChild(date);
+    rightTask.appendChild(edit);
+    rightTask.appendChild(delItem);
     
+    taskItem.appendChild(leftTask);
+    taskItem.appendChild(rightTask);
     taskList.appendChild(taskItem);
 }
 
