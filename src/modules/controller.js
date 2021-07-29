@@ -1,6 +1,6 @@
 import addProject from './project.js';
-import showContent from './inbox.js';
-import { formValue, writeTask, addColl } from './todo.js';
+import { showContent } from './inbox.js';
+import { formValue, writeTask, addColl, collTask } from './todo.js';
 
 function btnControl() {
     document.getElementById("inboxBtn").onclick = function() {clickInbox()};
@@ -11,11 +11,12 @@ function btnControl() {
         formValue();
         writeTask();
         addColl();
+        collTask();
         addTodo();
     };
 }
 function clickInbox() {
-    var pageTitle = document.getElementById('mainHead')
+    var pageTitle = document.getElementById('mainHead');
     pageTitle.innerHTML = 'Inbox';
     showContent();
 }
