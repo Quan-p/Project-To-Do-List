@@ -69,7 +69,7 @@ function writeTask() {
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
     var titleDiv = document.createElement('div');
-    titleDiv.setAttribute('class', 'title');
+    titleDiv.setAttribute('class', 'title collapsible');
     titleDiv.innerHTML = values[0];
     var delItem = document.createElement('span');
     delItem.setAttribute('class', 'material-icons taskControl');
@@ -90,6 +90,8 @@ function writeTask() {
     taskItem.appendChild(leftTask);
     taskItem.appendChild(rightTask);
     taskList.appendChild(taskItem);
+
+    return titleDiv;
 }
 
 function collTask() {
@@ -109,6 +111,15 @@ function collTask() {
     }
 }
 
+function addColl() {
+    var values = formValue();
+    var taskContent = document.createElement('div');
+    taskContent.setAttribute('class', 'task-content');
+    var descText = document.createElement('p');
+    descText.innerHTML = values[1];
+    taskContent.appendChild(descText);
+    titleDiv.appendChild(taskContent);
+}
 
 export {
     openModal,
