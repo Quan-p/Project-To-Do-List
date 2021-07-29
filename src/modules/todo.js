@@ -90,8 +90,20 @@ function writeTask() {
     taskItem.appendChild(leftTask);
     taskItem.appendChild(rightTask);
     taskList.appendChild(taskItem);
+}
 
-    return titleDiv;
+function addColl() {
+    var values = formValue();
+    var taskContent = document.createElement('div');
+    taskContent.setAttribute('class', 'task-content');
+    var descText = document.createElement('p');
+    descText.innerHTML = values[1];
+    taskContent.appendChild(descText);
+
+    var leftTask = document.getElementsByClassName('left-task');
+
+    leftTask[leftTask.length - 1].appendChild(taskContent);
+    collTask();
 }
 
 function collTask() {
@@ -111,21 +123,12 @@ function collTask() {
     }
 }
 
-function addColl() {
-    var values = formValue();
-    var taskContent = document.createElement('div');
-    taskContent.setAttribute('class', 'task-content');
-    var descText = document.createElement('p');
-    descText.innerHTML = values[1];
-    taskContent.appendChild(descText);
-    titleDiv.appendChild(taskContent);
-}
-
 export {
     openModal,
     openProject,
     formValue,
     writeTask,
+    addColl,
     collTask
     //validateForm
 }

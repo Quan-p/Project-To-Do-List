@@ -1,6 +1,6 @@
 import addProject from './project.js';
 import showContent from './inbox.js';
-import { formValue, writeTask } from './todo.js';
+import { formValue, writeTask, addColl } from './todo.js';
 
 function btnControl() {
     document.getElementById("inboxBtn").onclick = function() {clickInbox()};
@@ -10,6 +10,7 @@ function btnControl() {
     document.getElementById("modal-submit").onclick = () => {
         formValue();
         writeTask();
+        addColl();
         addTodo();
     };
 }
@@ -37,10 +38,6 @@ function clickProject() {
 }
 
 function addTodo() {
-    // document.getElementById('modal-submit').addEventListener('click', () => {
-    //     formValue();
-    //     writeTask();
-    //     });
     modalStore.style.display = 'none';
 }
 
