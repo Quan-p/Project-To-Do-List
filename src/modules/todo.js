@@ -72,7 +72,7 @@ function writeTask() {
     titleDiv.setAttribute('class', 'title collapsible');
     titleDiv.innerHTML = values[0];
     var delItem = document.createElement('span');
-    delItem.setAttribute('class', 'material-icons taskControl');
+    delItem.setAttribute('class', 'material-icons taskControl delTask');
     delItem.textContent = 'delete';
     var edit = document.createElement('span');
     edit.setAttribute('class', 'material-icons taskControl');
@@ -103,7 +103,6 @@ function addColl() {
     var leftTask = document.getElementsByClassName('left-task');
 
     leftTask[leftTask.length - 1].appendChild(taskContent);
-    collTask();
 }
 
 function collTask() {
