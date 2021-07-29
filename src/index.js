@@ -1,5 +1,6 @@
 import { openModal, openProject, formValue, collTask } from './modules/todo.js';
 import btnControl from './modules/controller.js';
+import {delTask} from './modules/inbox.js';
 
 function addItem() {
     var addTodo = document.getElementById('open-modal');
@@ -12,7 +13,7 @@ function modalProject() {
     addProject.addEventListener('click', openProject);
 }
 
-
+delTask();
 collTask();
 btnControl();
 addItem();
