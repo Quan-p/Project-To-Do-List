@@ -86,7 +86,7 @@ function writeTask() {
     rightTask.appendChild(date);
     rightTask.appendChild(edit);
     rightTask.appendChild(delItem);
-    
+
     taskItem.appendChild(leftTask);
     taskItem.appendChild(rightTask);
     taskList.appendChild(taskItem);
@@ -100,10 +100,10 @@ function collTask() {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.display === "flex") {
-        content.style.display = "none";
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
         } else {
-        content.style.display = "flex";
+        content.style.maxHeight = content.scrollHeight + "px";
         }
     });
     }
