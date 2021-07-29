@@ -112,6 +112,10 @@ input[type='checkbox'] {
     margin-right: 15px;
 }
 
+.delTask {
+    cursor: pointer;
+}
+
 .title {
     display: inline-flex;
 }
