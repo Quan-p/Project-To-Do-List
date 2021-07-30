@@ -112,7 +112,7 @@ input[type='checkbox'] {
     margin-right: 15px;
 }
 
-.delTask {
+.taskControl {
     cursor: pointer;
 }
 
