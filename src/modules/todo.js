@@ -103,6 +103,8 @@ function addColl() {
     var leftTask = document.getElementsByClassName('left-task');
 
     leftTask[leftTask.length - 1].appendChild(taskContent);
+
+    collTask();
 }
 
 function collTask() {
@@ -127,7 +129,7 @@ export {
     openProject,
     formValue,
     writeTask,
-    addColl,
-    collTask
+    addColl
+    
     //validateForm
 }
