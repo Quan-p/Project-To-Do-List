@@ -1,5 +1,5 @@
 import addProject from './project.js';
-import { showContent } from './inbox.js';
+import { delTask, showContent } from './inbox.js';
 import { formValue, writeTask, addColl, collTask } from './todo.js';
 
 function btnControl() {
@@ -13,6 +13,7 @@ function btnControl() {
         addColl();
         collTask();
         addTodo();
+        delTask();
     };
 }
 function clickInbox() {
