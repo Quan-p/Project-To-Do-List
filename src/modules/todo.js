@@ -84,7 +84,7 @@ function writeTask() {
     delItem.setAttribute('class', 'material-icons taskControl delTask');
     delItem.textContent = 'delete';
     var edit = document.createElement('span');
-    edit.setAttribute('class', 'material-icons taskControl');
+    edit.setAttribute('class', 'material-icons taskControl edit');
     edit.textContent = 'edit';
     var date = document.createElement('div');
     date.setAttribute('class', 'taskControl');
