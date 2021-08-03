@@ -129,7 +129,8 @@ export {
     openProject,
     formValue,
     writeTask,
-    addColl
+    addColl,
+    collTask
     
     //validateForm
 }

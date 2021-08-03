@@ -1,4 +1,4 @@
-import { openModal, openProject, formValue } from './modules/todo.js';
+import { openModal, openProject, formValue, collTask } from './modules/todo.js';
 import btnControl from './modules/controller.js';
 import {delTask} from './modules/inbox.js';
 
@@ -14,7 +14,7 @@ function modalProject() {
 }
 
 delTask();
-
+collTask();
 btnControl();
 addItem();
 modalProject();
