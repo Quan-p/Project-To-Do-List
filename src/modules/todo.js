@@ -71,6 +71,15 @@ function writeTask() {
     var titleDiv = document.createElement('div');
     titleDiv.setAttribute('class', 'title collapsible');
     titleDiv.innerHTML = values[0];
+    titleDiv.addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
     var delItem = document.createElement('span');
     delItem.setAttribute('class', 'material-icons taskControl delTask');
     delItem.textContent = 'delete';
@@ -104,23 +113,22 @@ function addColl() {
 
     leftTask[leftTask.length - 1].appendChild(taskContent);
 
-    collTask();
 }
 
 function collTask() {
     var coll = document.getElementsByClassName("collapsible");
     var i;
-
+    
     for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-        content.style.maxHeight = null;
-        } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
     }
 }
 
