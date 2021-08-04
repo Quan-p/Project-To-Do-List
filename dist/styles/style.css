@@ -186,6 +186,30 @@ li {
     transform: translate(-50%, -50%);
 }
 
+#project-modal {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#edit-body {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 h4 {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -270,16 +294,4 @@ select {
     width: 120px;
     justify-content: center;
     border-radius: 8px;
-}
-
-#project-modal {
-    background-color: white;
-    position: absolute;
-    margin: auto;
-    padding: 0px;
-    width: 80%;
-    overflow: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
