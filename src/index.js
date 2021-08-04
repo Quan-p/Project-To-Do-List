@@ -1,6 +1,6 @@
 import { openModal, openProject, openEdit, formValue, collTask } from './modules/todo.js';
 import btnControl from './modules/controller.js';
-import {delTask, editTask} from './modules/inbox.js';
+import {delTask} from './modules/inbox.js';
 
 function addItem() {
     var addTodo = document.getElementById('open-modal');
