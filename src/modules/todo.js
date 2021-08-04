@@ -103,8 +103,8 @@ function writeTask() {
     edit.textContent = 'edit';
     edit.addEventListener('click', function() {
         this.classList.toggle('active');
-
-    });
+        openEdit();
+        });
     var date = document.createElement('div');
     date.setAttribute('class', 'taskControl');
     date.textContent = values[3];
