@@ -22,8 +22,7 @@ function editTask() {
         edit[i].addEventListener('click', function(e) {
             this.classList.toggle("active")
         }
-    )
-    }
+    )};
 }
 
 export { 
