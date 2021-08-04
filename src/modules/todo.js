@@ -1,6 +1,7 @@
 function closeModal() {
     modalStore.style.display = 'none';
     projectStore.style.display = 'none';
+    editModal.style.display = 'none';
 }
 
 function openModal() {
@@ -27,6 +28,20 @@ function openProject() {
     window.onclick = function(event) {
         if (event.target == projectStore) {
           projectStore.style.display = "none";
+        }
+      }
+}
+
+function openEdit() {
+    var modal = document.getElementById('editModal')
+    modal.style.display = 'block';
+
+    var span = document.getElementsByClassName('close-button')[2];
+    span.addEventListener('click', closeModal);
+
+    window.onclick = function(event) {
+        if (event.target == editModal) {
+          modalStore.style.display = "none";
         }
       }
 }
@@ -86,6 +101,10 @@ function writeTask() {
     var edit = document.createElement('span');
     edit.setAttribute('class', 'material-icons taskControl edit');
     edit.textContent = 'edit';
+    edit.addEventListener('click', function() {
+        this.classList.toggle('active');
+
+    });
     var date = document.createElement('div');
     date.setAttribute('class', 'taskControl');
     date.textContent = values[3];
@@ -135,6 +154,7 @@ function collTask() {
 export {
     openModal,
     openProject,
+    openEdit,
     formValue,
     writeTask,
     addColl,
