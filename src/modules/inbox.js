@@ -19,7 +19,7 @@ function taskEdit() {
     console.log(x);
 }
 
-function formValue() {
+function editValue() {
     var taskTitle = document.getElementById('new-title').value;
     var taskDesc = document.getElementById('new-desc').value;
     var priority = document.getElementById('new-priority').value;
@@ -34,9 +34,13 @@ function formValue() {
     ];
 }
 
+function newTask() {
+
+}
 
 export { 
     showContent,
     delTask,
-    taskEdit
+    taskEdit,
+    editValue
 }

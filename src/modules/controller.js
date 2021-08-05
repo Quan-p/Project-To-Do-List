@@ -1,5 +1,5 @@
 import addProject from './project.js';
-import { delTask, showContent } from './inbox.js';
+import { delTask, showContent, taskEdit, editValue } from './inbox.js';
 import { formValue, writeTask, addColl } from './todo.js';
 
 function btnControl() {
@@ -13,6 +13,10 @@ function btnControl() {
         addColl();
         addTodo();
         delTask();
+    };
+    document.getElementById("edit-submit").onclick = () => {
+        editValue();
+        closeEdit();
     };
 }
 function clickInbox() {
@@ -42,4 +46,7 @@ function addTodo() {
     modalStore.style.display = 'none';
 }
 
+function closeEdit() {
+    editModal.style.display = 'none';
+}
 export default btnControl
