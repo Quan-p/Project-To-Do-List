@@ -14,9 +14,29 @@ function delTask() {
 }
 }
 
+function taskEdit() {
+    var x = document.getElementById('taskList').parentElement;
+    console.log(x);
+}
+
+function formValue() {
+    var taskTitle = document.getElementById('new-title').value;
+    var taskDesc = document.getElementById('new-desc').value;
+    var priority = document.getElementById('new-priority').value;
+    var dueDate = document.getElementById('new-date').value;
+    var taskProject = document.getElementById('new-project').value;
+    return [
+        taskTitle,
+        taskDesc,
+        priority,
+        dueDate,
+        taskProject
+    ];
+}
 
 
 export { 
     showContent,
-    delTask
+    delTask,
+    taskEdit
 }
