@@ -168,39 +168,14 @@
                         <span class='close-button'>&times;</span>
                         <h4>Edit Task</h4>
                     </div>
-                    <div class='modal-content'>
-                        <div class='columns'>
-                            <form class='modal-form' onsubmit="return validateForm()" method="post">
-                                <label for='title'>Title:</label><br>
-                                <input type='text' id='new-title' name='title' required><br><br>
-                                
-                                <label for='desc'>Description:</label><br>
-                                <textarea id='new-desc' name='desc' rows='4'></textarea><br>
-                            </form>
-                        </div>
-                        <div class='columns' class='modal-form'>
-                            <form onsubmit="return validateForm()" method="post" required>
-                                <label for="priority">Priority:</label><br>
-                                    <select name="priority" id="new-priority">
-                                    <option value="low">Low</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="high">High</option>
-                                    <option value="urgent">Urgent</option>
-                                    </select><br><br>
-
-                                <label for='due-date'>Due Date:</label><br>
-                                <input type="date" id='new-date' name='due-date'><br><br>
-
-                                <label for='project'>Project:</label><br>
-                                    <select name="project" id="new-project">
-                                        <option value="value" selected>None</option>
-                                    </select><br><br>
-                            </form>
-                            <div class="modal-footer">
-                                <button type="submit" id='edit-submit'>Add</button>
-                            </div>
-                        </div>
-                    </div>
+                    <div class='modal-content'></div>
+                        <form class='modal-form' onsubmit="return validateForm()" method="post">
+                            <label for='desc'>Description:</label><br>
+                            <textarea id='new-desc' name='desc' rows='4'></textarea><br>
+                        </form> 
+                    <div class="modal-footer">
+                        <button type="submit" id='edit-submit'>Add</button>
+                    </div>   
                 </div>        
             </div>
         </div>
