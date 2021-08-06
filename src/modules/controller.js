@@ -1,5 +1,5 @@
 import addProject from './project.js';
-import { delTask, showContent, taskEdit, newTask } from './inbox.js';
+import { delTask, showContent } from './inbox.js';
 import { formValue, writeTask, addColl } from './todo.js';
 
 function btnControl() {
