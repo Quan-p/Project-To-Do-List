@@ -38,6 +38,5 @@ function editValue() {
 export { 
     showContent,
     delTask,
-    taskEdit,
-    editValue
+    taskEdit
 }

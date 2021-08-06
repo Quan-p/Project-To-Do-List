@@ -32,17 +32,39 @@ function openProject() {
       }
 }
 
+function editValue() {
+    var taskTitle = document.getElementById('new-title').value;
+    var taskDesc = document.getElementById('new-desc').value;
+    var priority = document.getElementById('new-priority').value;
+    var dueDate = document.getElementById('new-date').value;
+    var taskProject = document.getElementById('new-project').value;
+    return [
+        taskTitle,
+        taskDesc,
+        priority,
+        dueDate,
+        taskProject
+    ];
+}
+
+function descEdit() {
+    var values = editValue();
+
+    var desc = this;
+    //desc.innerHTML = values[1];
+}
+
 function openEdit() {
     var modal = document.getElementById('editModal')
     modal.style.display = 'block';
-    var x = this;
+    descEdit();
 
     var span = document.getElementsByClassName('close-button')[2];
     span.addEventListener('click', closeModal);
 
     window.onclick = function(event) {
         if (event.target == editModal) {
-          modalStore.style.display = "none";
+          editModal.style.display = "none";
         }
       }
 }
