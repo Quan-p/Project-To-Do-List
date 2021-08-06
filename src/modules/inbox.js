@@ -35,12 +35,15 @@ function editValue() {
 }
 
 function newTask() {
-
+    var value = editValue();
+    var x = this.parentNode;
+    console.log(x);
 }
 
 export { 
     showContent,
     delTask,
     taskEdit,
-    editValue
+    editValue,
+    newTask
 }
