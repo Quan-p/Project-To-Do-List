@@ -160,6 +160,10 @@ li {
     outline: none;
 }
 
+.taskDesc {
+    cursor: pointer;
+}
+
 /* Modal styling */
 .modal {
     display: none;
