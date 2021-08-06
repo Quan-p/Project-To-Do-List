@@ -35,6 +35,7 @@ function openProject() {
 function openEdit() {
     var modal = document.getElementById('editModal')
     modal.style.display = 'block';
+    var x = this;
 
     var span = document.getElementsByClassName('close-button')[2];
     span.addEventListener('click', closeModal);
@@ -125,7 +126,12 @@ function addColl() {
     var taskContent = document.createElement('div');
     taskContent.setAttribute('class', 'task-content');
     var descText = document.createElement('p');
+    descText.setAttribute('class', 'taskDesc');
     descText.innerHTML = values[1];
+    descText.addEventListener('click', function() {
+        this.classList.toggle('active');
+        openEdit();
+        });
     taskContent.appendChild(descText);
 
     var leftTask = document.getElementsByClassName('left-task');

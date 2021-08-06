@@ -14,7 +14,7 @@ function modalProject() {
 }
 
 function clickEdit() {
-    var editArray = document.getElementsByClassName('edit');
+    var editArray = document.getElementsByClassName('taskDesc');
 
     Array.from(editArray).forEach(function(element) {
         element.addEventListener('click', openEdit, false);
