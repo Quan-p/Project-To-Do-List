@@ -1,5 +1,5 @@
 import addProject from './project.js';
-import { delTask, showContent, taskEdit, editValue } from './inbox.js';
+import { delTask, showContent, taskEdit, editValue, newTask } from './inbox.js';
 import { formValue, writeTask, addColl } from './todo.js';
 
 function btnControl() {
@@ -17,6 +17,7 @@ function btnControl() {
     document.getElementById("edit-submit").onclick = () => {
         editValue();
         closeEdit();
+        newTask();
     };
 }
 function clickInbox() {
