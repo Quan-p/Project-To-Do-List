@@ -1,4 +1,4 @@
-import { openModal, openProject, openEdit, formValue, collTask } from './modules/todo.js';
+import { openModal, openProject, changeDesc, collTask } from './modules/todo.js';
 import btnControl from './modules/controller.js';
 import {delTask} from './modules/inbox.js';
 
@@ -17,9 +17,8 @@ function clickEdit() {
     var editArray = document.getElementsByClassName('taskDesc');
 
     Array.from(editArray).forEach(function(element) {
-        element.addEventListener('click', openEdit, false);
-    });
-};
+        element.addEventListener('click', changeDesc, false);
+    })};
 
 delTask();
 collTask();

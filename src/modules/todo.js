@@ -169,9 +169,7 @@ function addColl() {
     descText.innerHTML = values[1];
     descText.addEventListener('click', function(event) {
         this.classList.toggle('active');
-        //openEdit();
         changeDesc(event);
-
         });
     taskContent.appendChild(descText);
 
@@ -201,11 +199,10 @@ function collTask() {
 export {
     openModal,
     openProject,
-    openEdit,
     formValue,
     writeTask,
     addColl,
-    collTask
-    
+    collTask,
+    changeDesc
     //validateForm
 }
