@@ -14,10 +14,6 @@ function btnControl() {
         addTodo();
         delTask();
     };
-    document.getElementById("edit-submit").onclick = () => {
-        closeEdit();
-        newTask();
-    };
 }
 function clickInbox() {
     var pageTitle = document.getElementById('mainHead');
@@ -46,7 +42,4 @@ function addTodo() {
     modalStore.style.display = 'none';
 }
 
-function closeEdit() {
-    editModal.style.display = 'none';
-}
 export default btnControl
