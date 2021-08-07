@@ -33,31 +33,23 @@ function openProject() {
 }
 
 function editValue() {
-    var taskTitle = document.getElementById('new-title').value;
+    //var taskTitle = document.getElementById('new-title').value;
     var taskDesc = document.getElementById('new-desc').value;
-    var priority = document.getElementById('new-priority').value;
-    var dueDate = document.getElementById('new-date').value;
-    var taskProject = document.getElementById('new-project').value;
+    //var priority = document.getElementById('new-priority').value;
+    //var dueDate = document.getElementById('new-date').value;
+    //var taskProject = document.getElementById('new-project').value;
     return [
-        taskTitle,
+        //taskTitle,
         taskDesc,
-        priority,
-        dueDate,
-        taskProject
+        //priority,
+        //dueDate,
+        //taskProject
     ];
 }
 
-function descEdit() {
-    var values = editValue();
-
-    var desc = this;
-    //desc.innerHTML = values[1];
-}
-
-function openEdit() {
+function openEdit(event) {
     var modal = document.getElementById('editModal')
     modal.style.display = 'block';
-    descEdit();
 
     var span = document.getElementsByClassName('close-button')[2];
     span.addEventListener('click', closeModal);
@@ -83,9 +75,34 @@ function formValue() {
         taskProject
     ];
 }
+function changeDesc(event) {
+    var desc, input, text;
+    event = event || window.event;
+    desc = event.target || event.srcElement;
+    if (desc && desc.tagName.toUpperCase() === "P") {
+    
+        desc.style.display = "none";
 
+        text = desc.innerHTML;
 
+        input = document.createElement("input");
+        input.type = "text";
+        input.value = text;
+        input.size = Math.max(text.length / 4 * 3, 4);
+        desc.parentNode.insertBefore(input, desc);
 
+        
+        input.focus();
+        input.onblur = function() {
+            
+            desc.parentNode.removeChild(input);
+
+            desc.innerHTML = input.value == "" ? "&nbsp;" : input.value;
+
+            desc.style.display = "";
+        }
+    }
+}
 // function validateForm() {
 //     var x = document.forms["myForm"]["fname"].value;
 //     if (x == "") {
@@ -150,9 +167,11 @@ function addColl() {
     var descText = document.createElement('p');
     descText.setAttribute('class', 'taskDesc');
     descText.innerHTML = values[1];
-    descText.addEventListener('click', function() {
+    descText.addEventListener('click', function(event) {
         this.classList.toggle('active');
-        openEdit();
+        //openEdit();
+        changeDesc(event);
+
         });
     taskContent.appendChild(descText);
 
