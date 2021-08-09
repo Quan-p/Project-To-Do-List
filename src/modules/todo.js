@@ -76,7 +76,6 @@ function changeDesc(event) {
         input.size = Math.max(text.length / 4 * 3, 4);
         desc.parentNode.insertBefore(input, desc);
 
-        
         input.focus();
         input.onblur = function() {
             
