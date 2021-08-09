@@ -18,11 +18,17 @@ function checkOff() {
     checkbox.forEach(function(checkbox) {
         checkbox.addEventListener('change', function(e) {
             var x = e.target.parentNode.parentNode;
-            x.style = 'text-decoration:line-through';
-        })
-    })
-    
-}
+            this.classList.toggle("checked");
+            if (this.classList.contains('checked')) {
+                x.style.textDecoration = 'line-through';
+                
+            } else {
+                x.style.textDecoration = ' none';
+            }
+    }, false);  
+})
+} 
+
 
 export { 
     showContent,
