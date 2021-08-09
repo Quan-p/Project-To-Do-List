@@ -13,8 +13,19 @@ function delTask() {
     }, false);
 }
 }
+function checkOff() {
+    var checkbox = document.querySelectorAll("input[type = checkbox]");
+    checkbox.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function(e) {
+            var x = e.target.parentNode.parentNode;
+            x.style = 'text-decoration:line-through';
+        })
+    })
+    
+}
 
 export { 
     showContent,
-    delTask
+    delTask, 
+    checkOff
 }
