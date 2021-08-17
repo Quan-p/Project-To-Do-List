@@ -172,6 +172,18 @@ ul li:hover {
     background: #ddd;
 }
 
+.sidebar {
+    
+}
+
+.sidebar ul li {
+    background: none;
+}
+
+.sidebar li {
+    justify-content: center;
+    align-items: center;
+}
 /* Modal styling */
 .modal {
     display: none;
