@@ -4,8 +4,6 @@ import { formValue, writeTask, addColl } from './todo.js';
 
 function btnControl() {
     document.getElementById("inboxBtn").onclick = function() {clickInbox()};
-    document.getElementById("todayBtn").onclick = function() {clickToday()};
-    document.getElementById("weekBtn").onclick = function() {clickWeek()};
     document.getElementById("project-submit").onclick = function() {clickProject()};
     document.getElementById("modal-submit").onclick = () => {
         formValue();
