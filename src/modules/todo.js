@@ -95,6 +95,22 @@ function changeDesc(event) {
 //     }
 // }
 
+function prioColor(taskItem) {
+    var values = formValue();
+    var priority = values[2];
+
+    if (priority == 'low') {
+        taskItem.style.color = 'blue';
+    } else if (priority == 'medium') {
+        taskItem.style.color = 'green';
+    } else if (priority == 'high') {
+        taskItem.style.color = 'yellow';
+    } else {
+        taskItem.style.color = 'red';
+    }
+    
+}
+
 function writeTask() {
     var values = formValue();
     var taskList = document.getElementById('taskList');
@@ -142,6 +158,8 @@ function writeTask() {
     taskItem.appendChild(leftTask);
     taskItem.appendChild(rightTask);
     taskList.appendChild(taskItem);
+
+    prioColor(taskItem);
 }
 
 function addColl() {
@@ -187,6 +205,7 @@ export {
     writeTask,
     addColl,
     collTask,
-    changeDesc
+    changeDesc,
+    prioColor
     //validateForm
 }
