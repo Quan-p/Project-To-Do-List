@@ -117,6 +117,7 @@ function writeTask() {
     var values = formValue();
     var taskList = document.getElementById('taskList');
     var taskItem = document.createElement('li');
+    taskItem.setAttribute('class', values[4]);
     
     var leftTask = document.createElement('div');
     leftTask.setAttribute('class', 'left-task');
