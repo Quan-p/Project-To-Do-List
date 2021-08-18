@@ -20,7 +20,21 @@ function projectSelect() {
     el.textContent = last_project;
     el.value = last_project;
     select.appendChild(el);  
-    
 }
 
-export default addProject
+function projectSort() {
+    var taskList = document.getElementById('taskList');
+
+    var tasks = [];
+    for(var i = taskList.childNodes.length; i--;) {
+        if(taskList.childNodes[i].nodeName === 'LI')
+        tasks.push(taskList.childNodes[i]);
+    }
+
+    console.log(tasks);
+}    
+
+export {
+    addProject,
+    projectSort
+}
