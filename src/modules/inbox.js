@@ -25,7 +25,7 @@ function checkOff() {
             } else {
                 x.style.textDecoration = ' none';
             }
-    }, false);  
+    });  
 })
 } 
 

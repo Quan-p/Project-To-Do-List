@@ -1,3 +1,5 @@
+import { checkOff } from "./inbox";
+
 function closeModal() {
     modalStore.style.display = 'none';
     projectStore.style.display = 'none';

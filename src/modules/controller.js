@@ -11,7 +11,7 @@ function btnControl() {
         addColl();
         addTodo();
         delTask();
-        checkOff();
+        //checkOff();
     };
 }
 function clickInbox() {
