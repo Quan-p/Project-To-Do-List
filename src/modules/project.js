@@ -6,7 +6,7 @@ function addProject() {
 
     projectItem.innerHTML = project;
     list.appendChild(projectItem);
-    projectSelect();  
+    projectSelect();
 }
 
 function projectSelect() {

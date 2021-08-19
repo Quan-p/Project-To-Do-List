@@ -22,6 +22,7 @@ function clickInbox() {
 function clickProject() {
     document.getElementById('project-submit').addEventListener('click', addProject(), projectLocalStorage());
     projectStore.style.display = "none";
+    document.getElementById('pName').value = "";
 }
 
 function addTodo() {
