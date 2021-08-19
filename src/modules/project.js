@@ -6,7 +6,10 @@ function addProject() {
 
     projectItem.innerHTML = project;
     list.appendChild(projectItem);
-    projectSelect();
+    projectSelect();  
+//     localStorage.setItem('projects', JSON.stringify(projectArray));
+//     localStorage.getItem('projects');
+//     console.log(projectList);
 }
 
 function projectSelect() {
@@ -19,7 +22,7 @@ function projectSelect() {
     var el = document.createElement("option");
     el.textContent = last_project;
     el.value = last_project;
-    select.appendChild(el);  
+    select.appendChild(el);
 }
 
 function projectSort() {
@@ -32,9 +35,19 @@ function projectSort() {
     }
 
     console.log(tasks);
-}    
+}
+
+function projectLocalStorage() {
+    var projectList = document.getElementById('project-list').getElementsByTagName('li');
+
+    // Loop through the NodeList object.
+    for (let i = 0; i <= projectList.length - 1; i++) {
+    console.log (projectList[i]);
+}
+}
 
 export {
     addProject,
-    projectSort
+    projectSort,
+    projectLocalStorage
 }

@@ -1,5 +1,5 @@
-import addProject from './project.js';
-import { checkOff, delTask, showContent } from './inbox.js';
+import { addProject, projectLocalStorage } from './project.js';
+import { delTask, showContent } from './inbox.js';
 import { formValue, writeTask, addColl } from './todo.js';
 
 function btnControl() {
@@ -11,7 +11,6 @@ function btnControl() {
         addColl();
         addTodo();
         delTask();
-        //checkOff();
     };
 }
 function clickInbox() {
@@ -21,7 +20,7 @@ function clickInbox() {
 }
     
 function clickProject() {
-    document.getElementById('project-submit').addEventListener('click', addProject());
+    document.getElementById('project-submit').addEventListener('click', addProject(), projectLocalStorage());
     projectStore.style.display = "none";
 }
 
