@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background: #23272a;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -191,6 +192,19 @@ ul li:hover {
     align-items: center;
     margin-bottom: 10px;
 }
+
+#inboxBtn, #addProject {
+    border-radius: 15px;
+}
+
+#inboxBtn {
+    justify-content: center;
+}
+
+#inboxBtn:hover, #addProject:hover {
+    background: #2C2F33;
+    color: #99aab5;
+}
 /* Modal styling */
 .modal {
     display: none;
@@ -330,6 +344,12 @@ select {
     border-radius: 15px;
 }
 
+#project-submit:hover, #modal-submit:hover {
+    background: #dedede;
+    cursor: pointer;
+    color: #2c2f33;
+}
+
 input {
     background-color: #dedede;
     border: none;
@@ -357,6 +377,6 @@ label {
     margin-top: 20px;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus, textarea:focus, select:focus, button:focus {
     outline: 0;
 }
