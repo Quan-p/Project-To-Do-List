@@ -11,6 +11,7 @@ function btnControl() {
         addColl();
         addTodo();
         delTask();
+        clearTask();
     };
 }
 function clickInbox() {
@@ -27,6 +28,11 @@ function clickProject() {
 
 function addTodo() {
     modalStore.style.display = 'none';
+}
+
+function clearTask() {
+    document.getElementById('title').value = "";
+    document.getElementById('desc').value = "";
 }
 
 export default btnControl
