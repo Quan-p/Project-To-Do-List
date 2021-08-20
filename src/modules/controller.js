@@ -1,4 +1,4 @@
-import { addProject, projectLocalStorage } from './project.js';
+import { addProject, makeList, projectLocalStorage, getFromLocalStorage } from './project.js';
 import { delTask, showContent } from './inbox.js';
 import { formValue, writeTask, addColl } from './todo.js';
 

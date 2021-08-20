@@ -24,21 +24,37 @@ function projectSelect() {
 
 function projectLocalStorage() {
     var projectList = document.getElementById('project-list').getElementsByTagName('li');
-    var projectArray = [];
+    var newArray = [];
     // Loop through the NodeList object.
     for (let i = 0; i <= projectList.length - 1; i++) {
-    //projectArray.push(projectList[i]);
-    projectArray.push(JSON.stringify(projectList[i].innerHTML));
-    console.log(projectList[i]);
+    newArray.push(projectList[i].innerHTML);
     }
-    localStorage.setItem('projects', projectArray);
+    localStorage.setItem('projects', newArray);
 }
 
-function getFromLocalStorage() {
+// function getFromLocalStorage() {
+//     var projectStore = localStorage.getItem('projects');
+
+//     if (projectStore) {
+//         var newArray = JSON.parse(projectStore);
+//     }
+//     return newArray;
+// }
+
+function makeList() {
     var projectStore = localStorage.getItem('projects');
+    
+    var list = document.getElementById('project-list');
+    for (var i = 0; i < projectStore.length; i++) {
+        var projectItem = document.createElement('li');
+        projectItem.appendChild(document.createTextNode(projectStore[i]));
+        list.appendChild(projectItem);
+    }
+    console.log(typeof list)
 }
 
 export {
     addProject,
-    projectLocalStorage
+    projectLocalStorage,
+    makeList
 }
