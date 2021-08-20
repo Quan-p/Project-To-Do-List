@@ -28,4 +28,3 @@ addItem();
 modalProject();
 clickEdit();
 checkOff();
-makeList();

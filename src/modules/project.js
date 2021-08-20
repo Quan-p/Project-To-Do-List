@@ -41,17 +41,17 @@ function projectLocalStorage() {
 //     return newArray;
 // }
 
-function makeList() {
-    var projectStore = localStorage.getItem('projects');
+// function makeList() {
+//     var projectStore = localStorage.getItem('projects');
     
-    var list = document.getElementById('project-list');
-    for (var i = 0; i < projectStore.length; i++) {
-        var projectItem = document.createElement('li');
-        projectItem.appendChild(document.createTextNode(projectStore[i]));
-        list.appendChild(projectItem);
-    }
-    console.log(typeof list)
-}
+//     var list = document.getElementById('project-list');
+//     for (var i = 0; i < projectStore.length; i++) {
+//         var projectItem = document.createElement('li');
+//         projectItem.appendChild(document.createTextNode(projectStore[i]));
+//         list.appendChild(projectItem);
+//     }
+//     console.log(typeof list)
+// }
 
 export {
     addProject,
