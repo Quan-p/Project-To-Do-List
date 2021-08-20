@@ -104,16 +104,16 @@
                     </div>
                         <div class='modal-content'>
                             <div id='col-one' class='columns'>
-                                <form id='form-one' class='modal-form' onsubmit="return validateForm()" method="post">
+                                <form id='form-one' class='modal-form' method="post">
                                     <label for='title'>Title:</label><br>
-                                    <input type='text' id='title' name='title' required><br><br>
+                                    <input type='text' id='title' name='title'><br><br>
                                     
                                     <label for='desc'>Description:</label><br>
                                     <textarea id='desc' name='desc' rows='4'></textarea><br>
                                 </form>
                             </div>
                             <div id='col-two' class='columns' class='modal-form'>
-                                <form id='form-two' onsubmit="return validateForm()" method="post" required>
+                                <form id='form-two'  method="post">
                                     <label for="priority">Priority:</label><br>
                                         <select name="priority" id="priority">
                                         <option value="low">Low</option>
@@ -146,10 +146,11 @@
                     <form>
                         <label for='pName'>Project Name:</label><br>
                         <input type='text' id='pName' name='pName'><br><br>
+                        <div class="modal-footer">
+                            <button type="submit" id='project-submit'>Add</button>
+                        </div>
                     </form>
-                    <div class="modal-footer">
-                        <button type="submit" id='project-submit'>Add</button>
-                    </div>
+                    
                 </div>
             </div>
             <div id='editModal' class='modal'>
@@ -159,7 +160,7 @@
                         <h4>Edit Task</h4>
                     </div>
                     <div class='modal-content'></div>
-                        <form class='modal-form' onsubmit="return validateForm()" method="post">
+                        <form class='modal-form' method="post">
                             <label for='desc'>Description:</label><br>
                             <textarea id='new-desc' name='desc' rows='4'></textarea><br>
                         </form> 
