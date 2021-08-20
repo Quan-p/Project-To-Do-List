@@ -55,6 +55,5 @@ function projectLocalStorage() {
 
 export {
     addProject,
-    projectLocalStorage,
-    makeList
+    projectLocalStorage
 }

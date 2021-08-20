@@ -1,6 +1,6 @@
 import { openModal, openProject, changeDesc, collTask } from './modules/todo.js';
 import btnControl from './modules/controller.js';
-import {checkOff, delTask} from './modules/inbox.js';
+import { delTask} from './modules/inbox.js';
 import { makeList } from './modules/project.js';
 
 function addItem() {
@@ -27,4 +27,3 @@ btnControl();
 addItem();
 modalProject();
 clickEdit();
-checkOff();
